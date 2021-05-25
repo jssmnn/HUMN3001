@@ -1,6 +1,6 @@
 # HUMN3001
 
-HEllO ALL, 
+HELLO ALL, 
 
 This is the final project for HUMN3001.
 
