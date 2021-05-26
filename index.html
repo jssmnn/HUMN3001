@@ -5,8 +5,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> HUMN3001 project: Origins of Damper </title>
+
     <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
+
 
 <body>
 
@@ -19,41 +22,24 @@
 
     </section>
 
-    <script type="text/javascript">
-
-        let sky = document.getElementById("sky");
-        let ground = document.getElementById("ground");
-        let vineLarge = document.getElementById("vineFront");
-        let text = document.getElementById("text");
-
-        window.addEventListener('scroll', function () {
-            var value = window.scrollY;
-            sky.style.top = -value * 0.2 + 'px';
-            vineLarge.style.top = value * 1 + 'px';
-            ground.style.top = value * 0.02 + 'px';
-
-        })
-
-    </script>
-
-
-    <!-- THIS IS A BREAK PAGE-->
-    <section>
-        <div id=poem>
-        </div>
-    </section>
-
     <!-- INTRODUCTION BEGINS HERE-->
-    <!-- THIS IS THE PAGE 1 -->
+    <!-- THIS IS THE PAGE 1, part 1 -->
 
     <section>
         <div id=poem>
             <p> In the morining, when you wake</p>
+        </div>
+        <img src="image\page 1\clouds.png" id="clouds">
+    </section>
+
+
+    <!-- THIS IS THE PAGE 1, part 2 -->
+    <section>
+        <div id=poem>
             <p> before you leave for school</p>
         </div>
         <img src="image\page 1\Sky.png" id="sky1">
         <img src="image\page 1\houses.png" id="houses">
-        <img src="image\page 1\clouds.png" id="clouds">
     </section>
 
     <!-- THIS IS THE PAGE 2-->
@@ -234,6 +220,25 @@
     <!-- RECIPE LINK GOES HERE 
     (need to figure out formatting and maybe pdf download link)-->
 
+
+    <script>
+        let sky = document.getElementById("sky");
+        let ground = document.getElementById("ground");
+        let vineLarge = document.getElementById("vineFront");
+        let text = document.getElementById("text");
+        let clouds = document.getElementById("clouds");
+
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+            sky.style.top = -value * 0.2 + 'px';
+            vineLarge.style.top = value * 1 + 'px';
+            ground.style.top = value * 0.02 + 'px';
+            clouds.style.left = value * -0.5 + 'px';
+
+        })
+
+    </script>
 </body>
 
 </html>
