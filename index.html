@@ -52,7 +52,7 @@
     <!-- THIS IS THE PAGE 3-->
 
     <section>
-        <div id=poem>
+        <div id=poem-dark>
             <p> In the morning we eat breakfast, it's simply a must have.</p>
             <p> So what do you eat when you eat your breakfast?</p>
             <p> Do you eat cereal? Do you eat toast?</p>
@@ -219,6 +219,7 @@
         let vineLarge = document.getElementById("vineFront");
         let text = document.getElementById("text");
         let clouds = document.getElementById("clouds");
+        let moon2 = document.getElementById("moon2");
 
 
         window.addEventListener('scroll', function () {
@@ -227,6 +228,7 @@
             vineLarge.style.top = value * 1 + 'px';
             ground.style.top = value * 0.02 + 'px';
             clouds.style.left = value * -0.5 + 'px';
+            moon2.style.left = value * -0.2 + 'px';
 
         })
 
